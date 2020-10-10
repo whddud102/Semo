@@ -11,7 +11,7 @@ public class SampleController {
 	
 	@GetMapping("/hello")
 	public String hello() {
-		log.info("로그 추가");
-		return "hi, 나는 정상 작동 중 7번째";
+
+		return "hi, 나는 정상 작동 중 8번째";
 	}
 }
