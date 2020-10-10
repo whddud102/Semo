@@ -12,6 +12,6 @@ public class SampleController {
 	@GetMapping("/hello")
 	public String hello() {
 
-		return "hi, 나는 정상 작동 중 8번째";
+		return "hi, 나는 정상 작동 중 8번째, pull 연습";
 	}
 }
