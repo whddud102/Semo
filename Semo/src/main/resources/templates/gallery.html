@@ -4,7 +4,7 @@ Titanium Template
 http://www.templatemo.com/preview/templatemo_372_titanium 
 -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>세상의 광고를 모아</title>
@@ -12,13 +12,13 @@ http://www.templatemo.com/preview/templatemo_372_titanium
 <meta name="description" content="" />
 <link href="templatemo_style.css" rel="stylesheet" type="text/css" />
 
-<link rel="stylesheet" href="css/orman.css" type="text/css" media="screen" />
-<link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />	
+<link rel="stylesheet" th:href="@{css/orman.css}" type="text/css" media="screen" />
+<link rel="stylesheet" th:href="@{css/nivo-slider.css}" type="text/css" media="screen" />	
 
 <link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
 
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/ddsmoothmenu.js">
+<script type="text/javascript" th:src="@{js/jquery.min.js}"></script>
+<script type="text/javascript" th:src="@{js/ddsmoothmenu.js}">
 
 /***********************************************
 * Smooth Navigational Menu- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
