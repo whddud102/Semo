@@ -10,15 +10,15 @@ http://www.templatemo.com/preview/templatemo_372_titanium
 <title>세상의 광고를 모아</title>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
-<link href="templatemo_style.css" rel="stylesheet" type="text/css" />
+<link th:href="@{/css/templatemo_style.css}" rel="stylesheet" type="text/css" />
 
-<link rel="stylesheet" th:href="@{css/orman.css}" type="text/css" media="screen" />
-<link rel="stylesheet" th:href="@{css/nivo-slider.css}" type="text/css" media="screen" />	
+<link rel="stylesheet" th:href="@{/css/orman.css}" type="text/css" media="screen" />
+<link rel="stylesheet" th:href="@{/css/nivo-slider.css}" type="text/css" media="screen" />	
 
-<link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
+<link rel="stylesheet" type="text/css" th:href="@{/css/ddsmoothmenu.css}" />
 
-<script type="text/javascript" th:src="@{js/jquery.min.js}"></script>
-<script type="text/javascript" th:src="@{js/ddsmoothmenu.js}">
+<script type="text/javascript" th:src="@{/js/jquery.min.js}"></script>
+<script type="text/javascript" th:src="@{/js/ddsmoothmenu.js}">
 
 /***********************************************
 * Smooth Navigational Menu- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
@@ -45,8 +45,8 @@ function clearText(field)
 }
 </script>
 
-<link rel="stylesheet" href="css/slimbox2.css" type="text/css" media="screen" /> 
-<script type="text/JavaScript" src="js/slimbox2.js"></script> 
+<link rel="stylesheet" th:href="@{/css/slimbox2.css}" type="text/css" media="screen" /> 
+<script type="text/JavaScript" th:src="@{/js/slimbox2.js}"></script> 
 <!--  t e m p l a t e m o  372  t i t a n i u m  -->
 </head>
 <body>
@@ -58,15 +58,15 @@ function clearText(field)
             <form action="#" method="get">
               <input type="text" value="Search..." name="keyword" id="keyword" title="keyword" 
               				onfocus="clearText(this)" onblur="clearText(this)" class="txt_field" />
-              <input type="submit" name="Search" value="" alt="Search" id="searchbutton" title="Search" class="sub_btn"  />
+              <input type="submit" name="search" value="" alt="Search" id="searchbutton" title="Search" class="sub_btn"  />
             </form>
         </div>
     </div><!-- END of templatemo_header -->
     <div id="templatemo_menu" class="ddsmoothmenu">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="index_flash.html">Flash Slider</a></li>
-            <li><a href="about.html">About</a>
+            <li><a th:href="@{/gallery}">메뉴1</a></li>
+            <li><a th:href="@{/gallery}">메뉴2</a></li>
+            <li><a th:href="@{/gallery}">메뉴3</a>
                 <ul>
                     <li><a href="#">Web Template 6</a></li>
                     <li><a href="#">Template Page 7</a></li>
@@ -74,7 +74,7 @@ function clearText(field)
                     <li><a href="#">Template Page 9</a></li>
               	</ul>
             </li>
-            <li><a href="gallery.html" class="selected">Gallery</a>
+            <li><a th:href="@{/gallery}" class="selected">메뉴4</a>
                 <ul>
                     <li><a href="#">Web Page 1</a></li>
                     <li><a href="#">Collection 2</a></li>
@@ -83,8 +83,8 @@ function clearText(field)
                     <li><a href="#">Web Page 5</a></li>
               	</ul>
             </li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a th:href="@{/gallery}">메뉴5</a></li>
+            <li><a th:href="@{/gallery}">메뉴6</a></li>
         </ul>
         <br style="clear: left" />
     </div> <!-- end of templatemo_menu -->
