@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 import com.semo.domain.Advertisement;
 import com.semo.domain.Criteria;
+import com.semo.domain.PageMaker;
 import com.semo.service.GalleryService;
 
 import lombok.extern.java.Log;
@@ -26,6 +27,7 @@ public class MainController {
 		List<Advertisement> ad_list = galleryService.getList(cri);
 		
 		model.addAttribute("ad_list", ad_list);
+		model.addAttribute("pageMaker", new PageMaker(cri));
 	}
 	
 	@GetMapping("/detail")

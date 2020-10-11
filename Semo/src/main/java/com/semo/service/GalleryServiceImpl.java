@@ -20,7 +20,13 @@ public class GalleryServiceImpl implements GalleryService{
 	private GalleryMapper galleryMapper;
 	
 	public List<Advertisement> getList(Criteria cri) {
-		log.info("getList(" + cri.getNum() + ")");
-		return galleryMapper.getList(cri.getNum());
+		log.info("getList(" + cri + ")");
+		List<Advertisement> result = galleryMapper.getList(cri);
+		
+		for(Advertisement ad : result) {
+			log.info(ad.toString());
+		}
+		
+		return result;
 	};
 }

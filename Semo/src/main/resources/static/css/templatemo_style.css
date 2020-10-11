@@ -13,7 +13,7 @@ body {
 	font-size: 11px;
 	line-height: 20px; 
 	background-color: #ffffff; 
-	background-image: url(images/templatemo_header.png);
+	background-image: url(../images/templatemo_header.png);
 	background-position: top;
 	background-repeat: repeat-x
 }
@@ -148,9 +148,9 @@ a.header { display: block; font-weight: 700 }
 }
 
 #site_title { float: left; margin-top: 40px; }
-#site_title a { display: block; font-size: 12px; font-family: Georgia, "Times New Roman", Times, serif; width: 200px; height: 45px; color: #acacac; text-indent: -10000px; background: url(images/templatemo_logo.png) no-repeat top left }
+#site_title a { display: block; font-size: 12px; font-family: Georgia, "Times New Roman", Times, serif; width: 200px; height: 45px; color: #acacac; text-indent: -10000px; background: url(../images/templatemo_logo.png) no-repeat top left }
 
-#templatemo_search { float: right; margin-top: 50px; width: 243px; height: 36px; background: url(images/templatemo_search.png) }
+#templatemo_search { float: right; margin-top: 50px; width: 243px; height: 36px; background: url(../images/templatemo_search.png) }
 #templatemo_search form {
 	margin: 0;
 	padding: 0;

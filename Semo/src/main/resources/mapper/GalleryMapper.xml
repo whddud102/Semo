@@ -4,11 +4,12 @@
 
 <mapper namespace="com.semo.mapper.GalleryMapper">
 
-	<select id="getList" resultType="com.semo.domain.Advertisement" parameterType="int">
+	<select id="getList" resultType="com.semo.domain.Advertisement" parameterType="com.semo.domain.Criteria">
 		<![CDATA[
 			SELECT *
 			FROM tbl_ad 
-			WHERE menu_num = #{menu_num}
+			WHERE menu_num = #{num}
+			AND search_hashTag LIKE CONCAT('%', #{keyword}, '%')
 		]]>
 	</select>
 	

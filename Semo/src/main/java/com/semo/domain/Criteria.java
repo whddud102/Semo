@@ -9,6 +9,6 @@ public class Criteria {
 	
 	public Criteria(String num, String keyword) {
 		this.num = num == null ? 1 : Integer.parseInt(num);
-		this.keyword = keyword == null ? "" : keyword;
+		this.keyword = keyword == null ? "#" : keyword;
 	}
 }
