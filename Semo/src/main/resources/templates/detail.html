@@ -1,0 +1,161 @@
+<!-- templatemo 372 titanium -->
+<!-- 
+Titanium Template 
+http://www.templatemo.com/preview/templatemo_372_titanium 
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>세상의 광고를 모아</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link th:href="@{/css/templatemo_style.css}" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" th:href="@{/css/orman.css}" type="text/css" media="screen" />
+<link rel="stylesheet" th:href="@{/css/nivo-slider.css}" type="text/css" media="screen" />	
+
+<link rel="stylesheet" type="text/css" th:href="@{/css/ddsmoothmenu.css}" />
+
+<script type="text/javascript" th:src="@{/js/jquery.min.js}"></script>
+<script type="text/javascript" th:src="@{/js/ddsmoothmenu.js}">
+
+/***********************************************
+* Smooth Navigational Menu- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+</script>
+
+<script language="javascript" type="text/javascript">
+
+ddsmoothmenu.init({
+	mainmenuid: "templatemo_menu", //menu DIV id
+	orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
+	classname: 'ddsmoothmenu', //class added to menu's outer DIV
+	//customtheme: ["#1c5a80", "#18374a"],
+	contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+})
+
+function clearText(field)
+{
+    if (field.defaultValue == field.value) field.value = '';
+    else if (field.value == '') field.value = field.defaultValue;
+}
+</script>
+
+<link rel="stylesheet" th:href="@{/css/slimbox2.css}" type="text/css" media="screen" /> 
+<script type="text/JavaScript" th:src="@{/js/slimbox2.js}"></script> 
+<!--  t e m p l a t e m o  372  t i t a n i u m  -->
+</head>
+<body>
+
+<div id="templatemo_wrapper">
+	<div id="templatemo_header">
+    	<div id="site_title"><a href="#"></a></div>
+    	<div id="templatemo_search">
+            <form th:action="@{/gallery}" method="get">
+              <input type="text" value="Search..." name="keyword" id="keyword" title="keyword" 
+              				onfocus="clearText(this)" onblur="clearText(this)" class="txt_field" />
+              <input type="submit" name="search" value="" alt="Search" id="searchbutton" title="Search" class="sub_btn"  />
+            </form>
+        </div>
+    </div><!-- END of templatemo_header -->
+    <div id="templatemo_menu" class="ddsmoothmenu">
+        <ul>
+            <li><a th:href="@{/gallery(num='1')}">메뉴1</a></li>
+            <li><a th:href="@{/gallery(num='2')}">메뉴2</a></li>
+            <li><a th:href="@{/gallery(num='3')}">메뉴3</a>
+                <ul>
+                    <li><a href="#">상세 메뉴1</a></li>
+                    <li><a href="#">상세 메뉴2</a></li>
+                    <li><a href="#">상세 메뉴3</a></li>
+                    <li><a href="#">상세 메뉴4</a></li>
+              	</ul>
+            </li>
+            <li><a th:href="@{/gallery(num='4')}" class="selected">메뉴4</a>
+                <ul>
+                     <li><a href="#">상세 메뉴1</a></li>
+                    <li><a href="#">상세 메뉴2</a></li>
+                    <li><a href="#">상세 메뉴3</a></li>
+                    <li><a href="#">상세 메뉴4</a></li>
+              	</ul>
+            </li>
+            <li><a th:href="@{/gallery(num='5')}">메뉴5</a></li>
+            <li><a th:href="@{/gallery(num='6')}">메뉴6</a></li>
+        </ul>
+        <br style="clear: left" />
+    </div> <!-- end of templatemo_menu -->
+    
+    <div id="templatemo_main">
+    	<h2>상세 페이지</h2>
+    	<div id="detail" align="center">
+    		<iframe width="560" height="315" src="https://www.youtube.com/embed/4OrCA1OInoo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		
+        <div class="clear"></div>
+        
+    
+    <div class="clear"></div>
+    </div><!-- END of templatemo_main -->
+</div><!-- END of templatemo_wrapper -->
+<div id="templatemo_bottom_wrapper">
+	<div id="templatemo_bottom">
+    	<div class="col one_fourth">
+            <h4>About</h4>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus porttitor lacus vel risus ullamcorper tempor. Pellentesque vestibulum vulputate odio sit amet adipiscing.</p>
+        </div>
+    	<div class="col one_fourth">
+            <h4>Photo Gallery</h4>
+            <ul class="footer_gallery">
+            	<li><a href="images/templatemo_image_06_l.jpg"  rel="lightbox[portfolio]"><img src="images/templatemo_image_06.jpg" alt="image 6" /></a></li>
+                <li><a href="images/templatemo_image_07_l.jpg"  rel="lightbox[portfolio]"><img src="images/templatemo_image_07.jpg" alt="image 7" /></a></li>
+                <li><a href="images/templatemo_image_08_l.jpg"  rel="lightbox[portfolio]"><img src="images/templatemo_image_08.jpg" alt="image 8" /></a></li>
+                <li><a href="images/templatemo_image_09_l.jpg"  rel="lightbox[portfolio]"><img src="images/templatemo_image_09.jpg" alt="image 9" /></a></li>
+                <li><a href="images/templatemo_image_10_l.jpg"  rel="lightbox[portfolio]"><img src="images/templatemo_image_10.jpg" alt="image 10" /></a></li>
+                <li><a href="images/templatemo_image_11_l.jpg"  rel="lightbox[portfolio]"><img src="images/templatemo_image_11.jpg" alt="image 11" /></a></li>
+                <li><a href="images/templatemo_image_12_l.jpg"  rel="lightbox[portfolio]"><img src="images/templatemo_image_12.jpg" alt="image 12" /></a></li>
+                <li><a href="images/templatemo_image_13_l.jpg"  rel="lightbox[portfolio]"><img src="images/templatemo_image_13.jpg" alt="image 13" /></a></li>
+                <li><a href="images/templatemo_image_14_l.jpg"  rel="lightbox[portfolio]"><img src="images/templatemo_image_14.jpg" alt="image 14" /></a></li>
+            </ul>
+            <div class="clear"></div>
+            <a href="gallery.html" class="more">more</a>
+        </div>
+    	<div class="col one_fourth">
+    	<h4>Recent Posts</h4>
+        <ul class="no_bullet">
+            <li>
+                <span class="header"><a href="#">Etiam suscipit bibendum scelerisque</a></span>
+                Aliquam erat volutpat vivamus accumsan magna sit amet.
+            </li>
+            <li>
+                <span class="header"><a href="#">Aliquam at felis odio</a></span>
+                Rhoncus purus, in pretium libero ut libero molestie nec lacinia mi fringilla. 
+            </li>
+                <li>
+                <span class="header"><a href="#">Sed vel justo ut sodales nulla</a></span>
+                Duis posuere ipsum quis arcu gravida  tincidunt eget ante gravid eu odio.
+            </li>
+		</ul>
+    </div>
+    <div class="col one_fourth no_margin_right">
+    	<h4>Twitter</h4>
+        <ul class="no_bullet">
+        	<li><a href="#">@templatemo</a> at scelerisque urna in tellus varius ultricies.</li>
+            <li>Suspendisse enean <a href="#">#FREE</a> tincidunt massa in tellus varius ultricies.</li>
+            <li> Aenean tincidunt massa in tellus varius ultricies. <a href="#">http://bit.ly/13IwZO</a></li>
+        </ul>
+    </div>
+        
+        <div class="clear"></div>
+    </div><!-- END of templatemo_bottom -->
+    </div><!-- END of templatemo_bottom_wrapper -->    
+<div id="templatemo_footer_wrapper">    
+    <div id="templatemo_footer">
+    	<p>Copyright © 2072 <a href="#">Company Name</a></p>
+    </div><!-- END of templatemo_footer -->
+</div><!-- END of templatemo_footer_wrapper -->
+</body>
+</html>

@@ -1,7 +1,15 @@
 package com.semo.controller;
 
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+
+import com.semo.domain.Advertisement;
+import com.semo.domain.Criteria;
+import com.semo.service.GalleryService;
 
 import lombok.extern.java.Log;
 
@@ -9,12 +17,19 @@ import lombok.extern.java.Log;
 @Controller
 public class MainController {
 	
+	@Autowired
+	private GalleryService galleryService;
+	
 	@GetMapping("/gallery")
-	public void goToGallery(String num) {
-		if(num == null) {
-			log.info("갤러리로 최초 접속입니다.");
-		} else {
-			log.info("갤러리로 이동 요청 (메뉴 : " + num + ")");
-		}
+	public void goToGallery(Criteria cri, Model model) {
+		log.info("갤러리로 이동 요청, 검색 조건 : " + cri);
+		List<Advertisement> ad_list = galleryService.getList(cri);
+		
+		model.addAttribute("ad_list", ad_list);
+	}
+	
+	@GetMapping("/detail")
+	public void goToDetail() {
+		log.info("상세 페이지로 이동");
 	}
 }
