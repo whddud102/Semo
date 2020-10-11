@@ -64,9 +64,9 @@ function clearText(field)
     </div><!-- END of templatemo_header -->
     <div id="templatemo_menu" class="ddsmoothmenu">
         <ul>
-            <li><a th:href="@{/gallery}">메뉴1</a></li>
-            <li><a th:href="@{/gallery}">메뉴2</a></li>
-            <li><a th:href="@{/gallery}">메뉴3</a>
+            <li><a th:href="@{/gallery(num='1')}">메뉴1</a></li>
+            <li><a th:href="@{/gallery(num='2')}">메뉴2</a></li>
+            <li><a th:href="@{/gallery(num='3')}">메뉴3</a>
                 <ul>
                     <li><a href="#">Web Template 6</a></li>
                     <li><a href="#">Template Page 7</a></li>
@@ -74,7 +74,7 @@ function clearText(field)
                     <li><a href="#">Template Page 9</a></li>
               	</ul>
             </li>
-            <li><a th:href="@{/gallery}" class="selected">메뉴4</a>
+            <li><a th:href="@{/gallery(num='4')}" class="selected">메뉴4</a>
                 <ul>
                     <li><a href="#">Web Page 1</a></li>
                     <li><a href="#">Collection 2</a></li>
@@ -83,8 +83,8 @@ function clearText(field)
                     <li><a href="#">Web Page 5</a></li>
               	</ul>
             </li>
-            <li><a th:href="@{/gallery}">메뉴5</a></li>
-            <li><a th:href="@{/gallery}">메뉴6</a></li>
+            <li><a th:href="@{/gallery(num='5')}">메뉴5</a></li>
+            <li><a th:href="@{/gallery(num='6')}">메뉴6</a></li>
         </ul>
         <br style="clear: left" />
     </div> <!-- end of templatemo_menu -->

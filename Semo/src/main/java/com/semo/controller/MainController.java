@@ -10,7 +10,7 @@ import lombok.extern.java.Log;
 public class MainController {
 	
 	@GetMapping("/gallery")
-	public void goToGallery() {
-		log.info("갤러리로 이동 요청");
+	public void goToGallery(String num) {
+		log.info("갤러리로 이동 요청 (메뉴 : " + num + ")");
 	}
 }
