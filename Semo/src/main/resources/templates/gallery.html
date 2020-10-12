@@ -103,7 +103,7 @@ function clearText(field)
 		<!-- end of templatemo_menu -->
 
 		<div id="templatemo_main">
-			<h2>Gallery</h2>
+			<h2 id="menu_text"></h2>
 			<div align="right">
 				<font size="3"><a href="#">조회순</a></font>&nbsp; &nbsp; &nbsp; &nbsp;
 				&nbsp;&nbsp;&nbsp; <font size="3"><a href="#">평점순</a></font>&nbsp;
@@ -247,10 +247,10 @@ function clearText(field)
 	$(document).ready(function() {
 		
 		var ad_list = [[${ad_list}]];
-		
-		console.log("메뉴 번호 : " +  $("#menu_num").val());		
-	
 		printAd(ad_list);
+		
+		
+		$("#menu_text").text("메뉴" + $("#menu_num").val());
 		
 	});
 	</script>
